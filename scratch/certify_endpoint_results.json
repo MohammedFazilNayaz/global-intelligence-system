@@ -1,0 +1,31 @@
+{
+  "Dashboard Summary": {
+    "code": 200,
+    "ok": true
+  },
+  "Live Intelligence Feed": {
+    "code": 200,
+    "ok": true
+  },
+  "Geo Features": {
+    "code": 200,
+    "ok": true
+  },
+  "Geo Unresolved": {
+    "code": 200,
+    "ok": true
+  },
+  "Reliability Audit": {
+    "code": 200,
+    "ok": true
+  },
+  "Market Tickers": {
+    "code": 200,
+    "ok": true
+  },
+  "Event Intelligence Dossier": {
+    "code": 200,
+    "ok": true,
+    "event_id": "a8d28814-9809-45b3-a7c1-6b396f5c4878"
+  }
+}

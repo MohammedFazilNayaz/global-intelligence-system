@@ -1,0 +1,510 @@
+{
+  "timestamp": "2026-09-15T14:32:08.569142+00:00",
+  "sources": {
+    "total": 28,
+    "active": 26,
+    "healthy": 20,
+    "degraded": 0,
+    "stale": 0,
+    "failed": 4,
+    "disabled": 2,
+    "auth_required": 1,
+    "rate_limited": 0
+  },
+  "documents": {
+    "last_1h": 48,
+    "last_6h": 288,
+    "last_24h": 1049,
+    "total": 2186
+  },
+  "events": {
+    "last_1h": 2,
+    "last_6h": 27,
+    "last_24h": 110,
+    "total": 235
+  },
+  "coverage_metrics": {
+    "calculated_at": "2026-09-15T14:32:08.937358+00:00",
+    "throughput": {
+      "documents_total": 2186,
+      "documents_1h": 48,
+      "documents_6h": 288,
+      "documents_24h": 1049,
+      "documents_7d": 2186,
+      "articles_per_day": 312.29,
+      "unique_articles_per_day": 1049.0,
+      "events_total": 235,
+      "events_1h": 2,
+      "events_6h": 27,
+      "events_24h": 110,
+      "events_7d": 235,
+      "events_per_day": 33.57
+    },
+    "events_by_region": {
+      "East Asia": 13,
+      "Sub-Saharan Africa": 8,
+      "North America": 34,
+      "South Asia": 30,
+      "Oceania": 7,
+      "Eurasia": 29,
+      "Southeast Asia": 24,
+      "Latin America": 1,
+      "Middle East": 24,
+      "Europe": 65
+    },
+    "events_by_domain": {
+      "attack": 2,
+      "transportation_event": 7,
+      "political_change": 1,
+      "disaster": 43,
+      "diplomatic_action": 1,
+      "election": 9,
+      "natural_disaster": 1,
+      "corporate_action": 1,
+      "conflict": 110,
+      "international_agreement": 8,
+      "trade_action": 8,
+      "central_bank_decision": 4,
+      "government_decision": 1,
+      "sanction": 26,
+      "coup": 3,
+      "economic_release": 2,
+      "military_action": 4,
+      "environmental_event": 2,
+      "protest": 2
+    },
+    "source_concentration": {
+      "top_sources_share": {
+        "GDACS Disaster Alerts": {
+          "documents": 481,
+          "share_pct": 22.0
+        },
+        "TASS Russian News Agency": {
+          "documents": 281,
+          "share_pct": 12.85
+        },
+        "Deutsche Welle World": {
+          "documents": 197,
+          "share_pct": 9.01
+        },
+        "The Straits Times": {
+          "documents": 160,
+          "share_pct": 7.32
+        },
+        "South China Morning Post": {
+          "documents": 158,
+          "share_pct": 7.23
+        },
+        "Al Jazeera World": {
+          "documents": 144,
+          "share_pct": 6.59
+        },
+        "The Hindu International": {
+          "documents": 143,
+          "share_pct": 6.54
+        },
+        "AllAfrica Top Headlines": {
+          "documents": 104,
+          "share_pct": 4.76
+        },
+        "France 24 English": {
+          "documents": 100,
+          "share_pct": 4.57
+        },
+        "BBC World News": {
+          "documents": 96,
+          "share_pct": 4.39
+        }
+      },
+      "hhi_index": 1018.7,
+      "bbc_aljazeera_share_pct": 10.98,
+      "is_overconcentrated": false
+    },
+    "syndication": {
+      "total_discovered": 38257,
+      "total_duplicates_skipped": 36071,
+      "duplicate_rate_pct": 94.29
+    },
+    "source_reliability": {
+      "total_configured": 28,
+      "active_sources": 26,
+      "failed_sources_pct": 15.38,
+      "status_breakdown": {
+        "HEALTHY": 20,
+        "DEGRADED": 0,
+        "STALE": 0,
+        "FAILED": 4,
+        "DISABLED": 2,
+        "AUTH_REQUIRED": 1,
+        "RATE_LIMITED": 0,
+        "UNKNOWN": 1
+      }
+    }
+  },
+  "source_inventory": [
+    {
+      "name": "ABC News Australia",
+      "type": "rss",
+      "feed_url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+      "region": "Oceania",
+      "domain": "Pacific Affairs & Indo-Pacific Security",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:20:38.404674+00:00",
+      "last_new_content": "2026-09-15T14:05:35.897382+00:00"
+    },
+    {
+      "name": "Ahram Online",
+      "type": "rss",
+      "feed_url": "https://english.ahram.org.eg/rss/1/1/Egypt.xml",
+      "region": "North Africa",
+      "domain": "MENA Regional Affairs & Diplomacy",
+      "active": true,
+      "health_status": "FAILED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 15,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "Al Jazeera World",
+      "type": "rss",
+      "feed_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "region": "Middle East",
+      "domain": "Geopolitics / Armed Conflict",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:30:23.200387+00:00",
+      "last_new_content": "2026-09-15T14:20:18.588406+00:00"
+    },
+    {
+      "name": "AllAfrica Top Headlines",
+      "type": "rss",
+      "feed_url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+      "region": "Sub-Saharan Africa",
+      "domain": "African Security & Economy",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:22:27.940987+00:00",
+      "last_new_content": "2026-09-15T14:07:28.224779+00:00"
+    },
+    {
+      "name": "ArXiv CS.AI Research",
+      "type": "rss",
+      "feed_url": "https://export.arxiv.org/rss/cs.AI",
+      "region": "North America",
+      "domain": "Frontier AI & Computing Research",
+      "active": true,
+      "health_status": "UNKNOWN",
+      "freshness_status": "UNKNOWN",
+      "consecutive_failures": 0,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "BBC World News",
+      "type": "rss",
+      "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "region": "Europe",
+      "domain": "Geopolitics",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:28:47.264253+00:00",
+      "last_new_content": "2026-09-15T14:03:38.910843+00:00"
+    },
+    {
+      "name": "Bank of England News",
+      "type": "rss",
+      "feed_url": "https://www.bankofengland.co.uk/rss/news",
+      "region": "Europe",
+      "domain": "Central Banking & Financial Stability",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:07:50.110034+00:00",
+      "last_new_content": "2026-09-15T13:07:42.611626+00:00"
+    },
+    {
+      "name": "CoinGecko Market Telemetry",
+      "type": "api",
+      "feed_url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd",
+      "region": "North America",
+      "domain": "Crypto Market Telemetry",
+      "active": true,
+      "health_status": "FAILED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 11,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "Deutsche Welle World",
+      "type": "rss",
+      "feed_url": "https://rss.dw.com/rdf/rss-en-all",
+      "region": "Europe",
+      "domain": "Geopolitics / European Affairs",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:30:34.891409+00:00",
+      "last_new_content": "2026-09-15T14:30:34.891409+00:00"
+    },
+    {
+      "name": "ECB Euro FX Reference",
+      "type": "rss",
+      "feed_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+      "region": "Europe",
+      "domain": "Forex Reference Rates",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:22:40.874727+00:00",
+      "last_new_content": null
+    },
+    {
+      "name": "European Central Bank Press",
+      "type": "rss",
+      "feed_url": "https://www.ecb.europa.eu/rss/press.html",
+      "region": "Europe",
+      "domain": "Central Banking & Rate Decisions",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:21:46.353292+00:00",
+      "last_new_content": "2026-09-15T06:29:13.244224+00:00"
+    },
+    {
+      "name": "FRED Macroeconomic API",
+      "type": "api",
+      "feed_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS",
+      "region": "North America",
+      "domain": "Macroeconomic Indicators & Interest Rates",
+      "active": true,
+      "health_status": "AUTH_REQUIRED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 12,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "France 24 English",
+      "type": "rss",
+      "feed_url": "https://www.france24.com/en/rss",
+      "region": "Europe",
+      "domain": "Diplomacy / Francophone Africa",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:15.811859+00:00",
+      "last_new_content": "2026-09-15T13:02:53.312889+00:00"
+    },
+    {
+      "name": "GDACS Disaster Alerts",
+      "type": "rss",
+      "feed_url": "https://www.gdacs.org/xml/rss.xml",
+      "region": "Europe",
+      "domain": "Natural Disasters (Multi-hazard)",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:22:54.694459+00:00",
+      "last_new_content": "2026-09-15T14:12:51.527746+00:00"
+    },
+    {
+      "name": "MercoPress South America",
+      "type": "rss",
+      "feed_url": "https://en.mercopress.com/rss",
+      "region": "Latin America",
+      "domain": "Trade / Regional Geopolitics",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:24:04.646104+00:00",
+      "last_new_content": "2026-09-15T07:44:43.455241+00:00"
+    },
+    {
+      "name": "NOAA National Hurricane Center",
+      "type": "rss",
+      "feed_url": "https://www.nhc.noaa.gov/index-at.xml",
+      "region": "North America",
+      "domain": "Tropical Cyclones & Severe Weather",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:33.697016+00:00",
+      "last_new_content": "2026-09-15T14:23:33.697016+00:00"
+    },
+    {
+      "name": "Reserve Bank of India Press",
+      "type": "rss",
+      "feed_url": "https://rbi.org.in/pressreleases_rss.xml",
+      "region": "South Asia",
+      "domain": "Central Banking & Macroprudential Policy",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:34.272824+00:00",
+      "last_new_content": "2026-09-15T13:53:32.361374+00:00"
+    },
+    {
+      "name": "South China Morning Post",
+      "type": "rss",
+      "feed_url": "https://www.scmp.com/rss/91/feed",
+      "region": "East Asia",
+      "domain": "East Asian Geopolitics & Technology",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:52.012087+00:00",
+      "last_new_content": "2026-09-15T14:23:52.012087+00:00"
+    },
+    {
+      "name": "TASS Russian News Agency",
+      "type": "rss",
+      "feed_url": "https://tass.com/rss/v2.xml",
+      "region": "Eurasia",
+      "domain": "Eurasian Geopolitics & Security",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:52.698536+00:00",
+      "last_new_content": "2026-09-15T14:23:52.698536+00:00"
+    },
+    {
+      "name": "The Hindu International",
+      "type": "rss",
+      "feed_url": "https://www.thehindu.com/news/international/feeder/default.rss",
+      "region": "South Asia",
+      "domain": "South Asian Geopolitics & Trade",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:51.671384+00:00",
+      "last_new_content": "2026-09-15T13:53:43.748517+00:00"
+    },
+    {
+      "name": "The Straits Times",
+      "type": "rss",
+      "feed_url": "https://www.straitstimes.com/news/world/rss.xml",
+      "region": "Southeast Asia",
+      "domain": "ASEAN Trade & Regional Politics",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:27.710587+00:00",
+      "last_new_content": "2026-09-15T14:23:27.710587+00:00"
+    },
+    {
+      "name": "UK Foreign Commonwealth & Development Office",
+      "type": "rss",
+      "feed_url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office.atom",
+      "region": "Europe",
+      "domain": "Foreign Affairs & Diplomatic Declarations",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:16.463987+00:00",
+      "last_new_content": "2026-09-15T14:23:16.463987+00:00"
+    },
+    {
+      "name": "UN News World Releases",
+      "type": "rss",
+      "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "region": "Global",
+      "domain": "General",
+      "active": false,
+      "health_status": "DISABLED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 13,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "US Department of State Press",
+      "type": "rss",
+      "feed_url": "https://www.state.gov/rss-feed/press-releases/feed/",
+      "region": "North America",
+      "domain": "Foreign Policy & Treaties",
+      "active": true,
+      "health_status": "FAILED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 3,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "US Federal Reserve Press",
+      "type": "rss",
+      "feed_url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "region": "North America",
+      "domain": "Central Banking & Monetary Policy",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:23:16.066311+00:00",
+      "last_new_content": "2026-09-12T14:56:37.187755+00:00"
+    },
+    {
+      "name": "US OFAC SDN Sanctions",
+      "type": "rss",
+      "feed_url": "https://www.treasury.gov/ofac/downloads/sdn.xml",
+      "region": "North America",
+      "domain": "Sanctions Blacklist",
+      "active": false,
+      "health_status": "DISABLED",
+      "freshness_status": "UNKNOWN",
+      "consecutive_failures": 0,
+      "last_checked": null,
+      "last_new_content": null
+    },
+    {
+      "name": "USGS Earthquakes M4.5+",
+      "type": "geojson",
+      "feed_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
+      "region": "North America",
+      "domain": "Natural Disasters (Seismic)",
+      "active": true,
+      "health_status": "HEALTHY",
+      "freshness_status": "CURRENT",
+      "consecutive_failures": 0,
+      "last_checked": "2026-09-15T14:30:46.423950+00:00",
+      "last_new_content": "2026-09-15T12:55:00.836187+00:00"
+    },
+    {
+      "name": "World Bank Open Data",
+      "type": "api",
+      "feed_url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json",
+      "region": "North America",
+      "domain": "Macroeconomic Baseline",
+      "active": true,
+      "health_status": "FAILED",
+      "freshness_status": "FAILED",
+      "consecutive_failures": 0,
+      "last_checked": null,
+      "last_new_content": null
+    }
+  ]
+}

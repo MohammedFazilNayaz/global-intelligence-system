@@ -1,0 +1,13 @@
+{
+  "verdict": "CLEAN",
+  "metrics": {
+    "synthetic_documents": 0,
+    "synthetic_event_clusters": 0,
+    "synthetic_extracted_events": 0,
+    "synthetic_relationships": 0,
+    "synthetic_market_observations": 0,
+    "total_entities": 150,
+    "entities_with_coords": 0,
+    "invalid_coordinates": 0
+  }
+}

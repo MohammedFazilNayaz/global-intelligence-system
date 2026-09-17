@@ -1,0 +1,342 @@
+{
+  "document_hhi": 967.31,
+  "top1_doc_share": 21.34,
+  "top3_doc_share": 42.47,
+  "top5_doc_share": 56.67,
+  "event_hhi": 917.06,
+  "top1_event_share": 12.67,
+  "top3_event_share": 36.2,
+  "top5_event_share": 57.92,
+  "region_coverage": {
+    "Africa": {
+      "documents": 111,
+      "unique_documents": 111,
+      "events": 7,
+      "sources": 1,
+      "primary_sources": 0,
+      "status": "PARTIAL"
+    },
+    "North America": {
+      "documents": 158,
+      "unique_documents": 158,
+      "events": 30,
+      "sources": 9,
+      "primary_sources": 9,
+      "status": "GOOD"
+    },
+    "South America": {
+      "documents": 22,
+      "unique_documents": 22,
+      "events": 1,
+      "sources": 1,
+      "primary_sources": 0,
+      "status": "PARTIAL"
+    },
+    "Europe": {
+      "documents": 1352,
+      "unique_documents": 1352,
+      "events": 84,
+      "sources": 9,
+      "primary_sources": 5,
+      "status": "GOOD"
+    },
+    "Middle East": {
+      "documents": 161,
+      "unique_documents": 161,
+      "events": 26,
+      "sources": 1,
+      "primary_sources": 0,
+      "status": "PARTIAL"
+    },
+    "North Africa": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 1,
+      "primary_sources": 0,
+      "status": "WEAK"
+    },
+    "South Asia": {
+      "documents": 180,
+      "unique_documents": 180,
+      "events": 27,
+      "sources": 2,
+      "primary_sources": 1,
+      "status": "GOOD"
+    },
+    "Central Asia": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 0,
+      "primary_sources": 0,
+      "status": "NONE"
+    },
+    "East Asia": {
+      "documents": 344,
+      "unique_documents": 344,
+      "events": 37,
+      "sources": 2,
+      "primary_sources": 0,
+      "status": "GOOD"
+    },
+    "Southeast Asia": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 0,
+      "primary_sources": 0,
+      "status": "NONE"
+    },
+    "Oceania": {
+      "documents": 95,
+      "unique_documents": 95,
+      "events": 7,
+      "sources": 1,
+      "primary_sources": 0,
+      "status": "PARTIAL"
+    }
+  },
+  "domain_coverage": {
+    "Geopolitics": {
+      "documents": 1325,
+      "unique_documents": 1325,
+      "events": 214,
+      "sources": 10,
+      "primary_sources": 1,
+      "status": "GOOD"
+    },
+    "Conflict/Security": {
+      "documents": 669,
+      "unique_documents": 669,
+      "events": 177,
+      "sources": 4,
+      "primary_sources": 0,
+      "status": "GOOD"
+    },
+    "Diplomacy": {
+      "documents": 124,
+      "unique_documents": 124,
+      "events": 37,
+      "sources": 3,
+      "primary_sources": 1,
+      "status": "GOOD"
+    },
+    "Economics": {
+      "documents": 111,
+      "unique_documents": 111,
+      "events": 7,
+      "sources": 3,
+      "primary_sources": 2,
+      "status": "GOOD"
+    },
+    "Central Banks": {
+      "documents": 123,
+      "unique_documents": 123,
+      "events": 4,
+      "sources": 4,
+      "primary_sources": 4,
+      "status": "GOOD"
+    },
+    "Energy": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 0,
+      "primary_sources": 0,
+      "status": "NONE"
+    },
+    "Commodities": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 0,
+      "primary_sources": 0,
+      "status": "NONE"
+    },
+    "Corporate": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 1,
+      "sources": 0,
+      "primary_sources": 0,
+      "status": "PARTIAL"
+    },
+    "Technology": {
+      "documents": 501,
+      "unique_documents": 501,
+      "events": 46,
+      "sources": 6,
+      "primary_sources": 2,
+      "status": "GOOD"
+    },
+    "Science": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 0,
+      "sources": 1,
+      "primary_sources": 1,
+      "status": "WEAK"
+    },
+    "Disasters": {
+      "documents": 551,
+      "unique_documents": 551,
+      "events": 38,
+      "sources": 2,
+      "primary_sources": 2,
+      "status": "GOOD"
+    },
+    "Sanctions": {
+      "documents": 0,
+      "unique_documents": 0,
+      "events": 36,
+      "sources": 1,
+      "primary_sources": 1,
+      "status": "PARTIAL"
+    },
+    "Trade": {
+      "documents": 352,
+      "unique_documents": 352,
+      "events": 60,
+      "sources": 3,
+      "primary_sources": 0,
+      "status": "GOOD"
+    },
+    "Markets": {
+      "documents": 71,
+      "unique_documents": 71,
+      "events": 0,
+      "sources": 2,
+      "primary_sources": 2,
+      "status": "GOOD"
+    }
+  },
+  "article_to_event_ratios": [
+    {
+      "source": "GDACS Disaster Alerts",
+      "documents": 517,
+      "events": 2,
+      "ratio": 258.5
+    },
+    {
+      "source": "CoinGecko Market Telemetry",
+      "documents": 71,
+      "events": 0,
+      "ratio": 71.0
+    },
+    {
+      "source": "Reserve Bank of India Press",
+      "documents": 32,
+      "events": 1,
+      "ratio": 32.0
+    },
+    {
+      "source": "Bank of England News",
+      "documents": 52,
+      "events": 2,
+      "ratio": 26.0
+    },
+    {
+      "source": "NOAA National Hurricane Center",
+      "documents": 23,
+      "events": 0,
+      "ratio": 23.0
+    },
+    {
+      "source": "MercoPress South America",
+      "documents": 22,
+      "events": 1,
+      "ratio": 22.0
+    },
+    {
+      "source": "US Federal Reserve Press",
+      "documents": 20,
+      "events": 0,
+      "ratio": 20.0
+    },
+    {
+      "source": "European Central Bank Press",
+      "documents": 19,
+      "events": 1,
+      "ratio": 19.0
+    },
+    {
+      "source": "AllAfrica Top Headlines",
+      "documents": 111,
+      "events": 7,
+      "ratio": 15.86
+    },
+    {
+      "source": "ABC News Australia",
+      "documents": 95,
+      "events": 7,
+      "ratio": 13.57
+    },
+    {
+      "source": "South China Morning Post",
+      "documents": 162,
+      "events": 13,
+      "ratio": 12.46
+    },
+    {
+      "source": "UK Foreign Commonwealth & Development Office",
+      "documents": 34,
+      "events": 3,
+      "ratio": 11.33
+    },
+    {
+      "source": "TASS Russian News Agency",
+      "documents": 302,
+      "events": 28,
+      "ratio": 10.79
+    },
+    {
+      "source": "BBC World News",
+      "documents": 104,
+      "events": 10,
+      "ratio": 10.4
+    },
+    {
+      "source": "Deutsche Welle World",
+      "documents": 210,
+      "events": 24,
+      "ratio": 8.75
+    },
+    {
+      "source": "The Straits Times",
+      "documents": 182,
+      "events": 24,
+      "ratio": 7.58
+    },
+    {
+      "source": "France 24 English",
+      "documents": 114,
+      "events": 16,
+      "ratio": 7.12
+    },
+    {
+      "source": "Al Jazeera World",
+      "documents": 161,
+      "events": 26,
+      "ratio": 6.19
+    },
+    {
+      "source": "The Hindu International",
+      "documents": 148,
+      "events": 26,
+      "ratio": 5.69
+    },
+    {
+      "source": "USGS Earthquakes M4.5+",
+      "documents": 34,
+      "events": 22,
+      "ratio": 1.55
+    },
+    {
+      "source": "US Department of State Press",
+      "documents": 10,
+      "events": 8,
+      "ratio": 1.25
+    }
+  ]
+}

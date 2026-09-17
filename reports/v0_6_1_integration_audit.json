@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "title": "V0.6.1 Production-Data Integration Audit",
+    "project": "Global Intelligence Platform (Market Intelligence Layer)",
+    "audit_timestamp_utc": "2026-09-11T03:45:00Z",
+    "version": "V0.6.1-audit",
+    "status": "HOLD / INCOMPLETE (Mock/Fixture Only)"
+  },
+  "workspace_verification": {
+    "target_project_path": "E:\\Career-2027\\Project\\global intelligent newa system",
+    "btc_source_project_path": "E:\\Career-2027\\Project\\bitcoin trade",
+    "active_environment": "Python 3.11 (.venv) + Node.js 20 (frontend)",
+    "database_backend": "PostgreSQL 16 via pgserver (.pgdata)",
+    "database_url": "postgresql+psycopg://postgres:@127.0.0.1:5432/global_intelligence"
+  },
+  "canonical_universe_status": {
+    "approved_universe_count": 16,
+    "actual_code_universe_count": 16,
+    "actual_postgresql_universe_count": 16,
+    "is_match": true,
+    "assets": [
+      {
+        "symbol": "BTC-USD",
+        "canonical_name": "Bitcoin",
+        "asset_class": "crypto",
+        "venue": "Coinbase / Binance / Delta India",
+        "mapped_provider_symbol": "BTCUSD",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "ETH-USD",
+        "canonical_name": "Ethereum",
+        "asset_class": "crypto",
+        "venue": "Coinbase / Binance / Delta India",
+        "mapped_provider_symbol": "ETHUSD",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "SPX",
+        "canonical_name": "S&P 500 Index",
+        "asset_class": "equity_index",
+        "venue": "Cboe / CME",
+        "mapped_provider_symbol": "^GSPC",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "NDX",
+        "canonical_name": "Nasdaq 100",
+        "asset_class": "equity_index",
+        "venue": "Nasdaq / CME",
+        "mapped_provider_symbol": "^NDX",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "DAX",
+        "canonical_name": "DAX 40",
+        "asset_class": "equity_index",
+        "venue": "Deutsche Börse",
+        "mapped_provider_symbol": "^GDAXI",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "FTSE",
+        "canonical_name": "FTSE 100",
+        "asset_class": "equity_index",
+        "venue": "London Stock Exchange",
+        "mapped_provider_symbol": "^FTSE",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "N225",
+        "canonical_name": "Nikkei 225",
+        "asset_class": "equity_index",
+        "venue": "Tokyo Stock Exchange",
+        "mapped_provider_symbol": "^N225",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "EUR/USD",
+        "canonical_name": "Euro / US Dollar",
+        "asset_class": "forex",
+        "venue": "Interbank FX",
+        "mapped_provider_symbol": "EURUSD=X",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "GBP/USD",
+        "canonical_name": "British Pound / US Dollar",
+        "asset_class": "forex",
+        "venue": "Interbank FX",
+        "mapped_provider_symbol": "GBPUSD=X",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "USD/JPY",
+        "canonical_name": "US Dollar / Japanese Yen",
+        "asset_class": "forex",
+        "venue": "Interbank FX",
+        "mapped_provider_symbol": "JPY=X",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "USD/INR",
+        "canonical_name": "US Dollar / Indian Rupee",
+        "asset_class": "forex",
+        "venue": "Interbank FX",
+        "mapped_provider_symbol": "INR=X",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "BRENT",
+        "canonical_name": "Brent Crude Oil",
+        "asset_class": "commodity",
+        "venue": "ICE",
+        "mapped_provider_symbol": "BZ=F",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "WTI",
+        "canonical_name": "WTI Crude Oil",
+        "asset_class": "commodity",
+        "venue": "NYMEX",
+        "mapped_provider_symbol": "CL=F",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "GOLD",
+        "canonical_name": "Gold Spot",
+        "asset_class": "commodity",
+        "venue": "COMEX / LBMA",
+        "mapped_provider_symbol": "GC=F",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "US2Y",
+        "canonical_name": "US 2-Year Treasury Yield",
+        "asset_class": "interest_rate",
+        "venue": "Tradeweb / US Treasury",
+        "mapped_provider_symbol": "^2YEAR",
+        "status": "APPROVED"
+      },
+      {
+        "symbol": "US10Y",
+        "canonical_name": "US 10-Year Treasury Yield",
+        "asset_class": "interest_rate",
+        "venue": "Tradeweb / US Treasury",
+        "mapped_provider_symbol": "^TNX",
+        "status": "APPROVED"
+      }
+    ],
+    "unapproved_substitutions_in_code": {
+      "SOL": false,
+      "DJI": false,
+      "USD/CNY": false
+    },
+    "note": "The previous walkthrough report markdown contained an errant table mentioning SOL, DJI, and USD/CNY. In the codebase (market_service.py) and PostgreSQL (market_assets), the canonical 16 universe is strictly implemented without substitutions."
+  },
+  "delta_provider_reuse": {
+    "source_class": "DeltaMarketDataProvider",
+    "source_file": "bitcoin trade/backend/app/data/providers/delta.py",
+    "verified_live_endpoint": "https://api.india.delta.exchange/v2/history/candles",
+    "requires_credentials": false,
+    "crypto_coverage": ["BTCUSD", "ETHUSD"],
+    "reuse_architecture": "Wrap DeltaMarketDataProvider via an adapter (DeltaCryptoMarketProvider) inheriting from BaseMarketDataProvider without modifying the BTC project. Map CandleDTO to MarketObservationCreate, preserving exchange timestamps, volume, and provenance.",
+    "provenance_metadata": {
+      "exchange": "delta_india",
+      "product_ids": {
+        "BTCUSD": 27,
+        "ETHUSD": 3136
+      },
+      "is_live": true
+    }
+  },
+  "macro_provider_status": {
+    "current_classes": [
+      "EquityMarketProvider",
+      "ForexMarketProvider",
+      "CommodityMarketProvider",
+      "RatesMarketProvider"
+    ],
+    "current_implementation": "STUB (methods return None and empty lists)",
+    "proposed_adapter": "Direct Yahoo Finance HTTP API (query1.finance.yahoo.com/v8/finance/chart/) via httpx.Client, requiring zero API keys, fully supporting equities, FX, commodities, and rates with standard calendar session timestamps and gap preservation."
+  },
+  "postgresql_audit": {
+    "connection_status": "CONNECTED (Port 5432, PID active)",
+    "database_name": "global_intelligence",
+    "alembic_revision": "head",
+    "tables_detected": 13,
+    "row_counts": {
+      "alembic_version": 1,
+      "market_assets": 16,
+      "market_observations": 0,
+      "event_market_correlations": 0,
+      "entities": 20,
+      "event_clusters": 10,
+      "event_cluster_members": 0,
+      "extracted_events": 0,
+      "documents": 1,
+      "sources": 1,
+      "document_entities": 0,
+      "economic_indicators": 0,
+      "economic_observations": 0
+    },
+    "constraints_verified": [
+      "uq_market_obs_asset_interval_ts_source",
+      "uq_event_asset_window",
+      "Foreign key cascades on market_asset_id"
+    ]
+  },
+  "event_correlation_audit": {
+    "implementation_file": "backend/app/services/correlation_service.py",
+    "supported_windows": ["5m", "15m", "1h", "4h", "1d"],
+    "formula": "Return % = ((P_post / P_pre) - 1.0) * 100",
+    "excursion_formula": "Max excursion = ((MaxHigh - P_pre) / P_pre) * 100",
+    "missing_data_behavior": "Zero fabrication; returns null when pre/post observations are unavailable",
+    "current_production_state": "0 correlation rows in PostgreSQL (validated only under synthetic/deterministic test fixture)"
+  },
+  "test_audit": {
+    "backend_pytest": {
+      "total": 172,
+      "passed": 172,
+      "failed": 0,
+      "duration_sec": 8.65,
+      "status": "PASS"
+    },
+    "frontend_vitest": {
+      "total": 26,
+      "passed": 26,
+      "failed": 0,
+      "test_files": 7,
+      "duration_sec": 15.76,
+      "status": "PASS"
+    },
+    "frontend_production_build": {
+      "command": "npm run build (tsc -b && vite build)",
+      "status": "PASS",
+      "build_time_ms": 277
+    }
+  },
+  "production_data_status": {
+    "classification": "A. MOCK / FIXTURE ONLY",
+    "evidence": "market_observations table has exactly 0 rows in PostgreSQL. event_market_correlations has exactly 0 rows. Tests run exclusively against DeterministicMarketProvider or in-memory SQLite fixtures. Live provider has not persisted real observations."
+  },
+  "blockers": [
+    "Pulling real crypto data: DeltaMarketDataProvider has been verified live but is not yet wired to persist observations to PostgreSQL in global intelligent newa system.",
+    "Pulling real macro data: Equity, FX, Commodity, and Rates providers are stubs returning empty arrays.",
+    "Real correlation validation: Extracted events and real market observations must be populated to compute and store genuine production correlations."
+  ],
+  "recommended_implementation_order": [
+    "Step 1: Implement DeltaCryptoMarketProvider adapter in backend/app/market/providers.py reusing DeltaMarketDataProvider from bitcoin trade.",
+    "Step 2: Implement MacroMarketProvider in backend/app/market/providers.py to fetch equities, FX, commodities, and rates from Yahoo Finance chart API.",
+    "Step 3: Execute live fetch script for all 16 canonical assets (minimum 100 bars per asset) and persist to PostgreSQL market_observations.",
+    "Step 4: Create a genuine event in extracted_events and compute real production event_market_correlations across T-W, T, T+W.",
+    "Step 5: Verify bidirectional queries (Event -> Assets, Asset -> Events) against PostgreSQL.",
+    "Step 6: Run full regression (backend pytest + coverage, frontend Vitest, production build) and issue V0.6.1 production certification report."
+  ]
+}

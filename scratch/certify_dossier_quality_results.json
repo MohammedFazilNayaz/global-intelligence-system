@@ -1,0 +1,571 @@
+{
+  "events_tested": 20,
+  "evidence_class_distribution": {
+    "OBSERVED": 29,
+    "DIRECT": 66,
+    "HISTORICAL_ASSOCIATION": 339,
+    "ANALYTICAL_IMPLICATION": 10,
+    "UNKNOWN": 0
+  },
+  "audit_results": [
+    {
+      "event_id": "a8d28814-9809-45b3-a7c1-6b396f5c4878",
+      "title": "Money Market Operations as on September 14, 2026 [Liquidity Facility]",
+      "event_type": "central_bank_decision",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 11,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 12:30:00+00:00",
+        "fetch_time": "2026-09-15 07:59:26.935260+00:00",
+        "ingestion_time": "2026-09-15 07:59:26.935260+00:00",
+        "extraction_time": "2026-09-15 07:59:27.320543+00:00",
+        "intelligence_update_time": "2026-09-15 07:59:27.320543+00:00"
+      }
+    },
+    {
+      "event_id": "b1ca4877-0d13-4393-8111-9bda9a52cbf7",
+      "title": "Money Market Operations as on September 13, 2026 [Liquidity Facility]",
+      "event_type": "central_bank_decision",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 11,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 12:25:00+00:00",
+        "fetch_time": "2026-09-15 07:29:24.355205+00:00",
+        "ingestion_time": "2026-09-15 07:29:24.355205+00:00",
+        "extraction_time": "2026-09-15 07:29:24.644719+00:00",
+        "intelligence_update_time": "2026-09-15 07:29:24.644719+00:00"
+      }
+    },
+    {
+      "event_id": "9f5918c0-05d6-481a-8c87-d1380a4314a5",
+      "title": "Money Market Operations as on September 12, 2026 [Liquidity Facility]",
+      "event_type": "central_bank_decision",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 11,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 12:20:00+00:00",
+        "fetch_time": "2026-09-15 07:59:26.935260+00:00",
+        "ingestion_time": "2026-09-15 07:59:26.935260+00:00",
+        "extraction_time": "2026-09-15 07:59:27.368612+00:00",
+        "intelligence_update_time": "2026-09-15 07:59:27.368612+00:00"
+      }
+    },
+    {
+      "event_id": "89f07f53-3c19-45f6-a193-309606e3ec24",
+      "title": "Viktor Bout sees no real readiness from US to restore relations with Russia [Sanctions]",
+      "event_type": "sanction",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 2,
+      "directly_affected_count": 0,
+      "countries_count": 2,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 50,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 11:41:26+00:00",
+        "fetch_time": "2026-09-15 17:20:42.741231+00:00",
+        "ingestion_time": "2026-09-15 17:20:42.741231+00:00",
+        "extraction_time": "2026-09-15 17:20:43.171401+00:00",
+        "intelligence_update_time": "2026-09-15 17:20:43.171401+00:00"
+      }
+    },
+    {
+      "event_id": "a56696fc-086a-477e-bf4b-29f15ad7e626",
+      "title": "M4.7 Earthquake - 120 km S of Panguna, Papua New Guinea",
+      "event_type": "disaster",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 0,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 0,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 11:34:58.788000+00:00",
+        "fetch_time": "2026-09-15 12:55:00.813114+00:00",
+        "ingestion_time": "2026-09-15 12:55:00.813114+00:00",
+        "extraction_time": "2026-09-15 12:55:00.944520+00:00",
+        "intelligence_update_time": "2026-09-15 12:55:00.944520+00:00"
+      }
+    },
+    {
+      "event_id": "bb9681f4-fb2f-4207-9cc1-5901faa882ed",
+      "title": "Secretary Rubio\u2019s Call with Omani Foreign Minister Sayyid Badr al-Busaidi [Attacks]",
+      "event_type": "conflict",
+      "confidence": 0.96,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 2,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 46,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 11:30:47+00:00",
+        "fetch_time": "2026-09-15 17:10:46.196379+00:00",
+        "ingestion_time": "2026-09-15 17:10:46.196379+00:00",
+        "extraction_time": "2026-09-15 17:10:46.557555+00:00",
+        "intelligence_update_time": "2026-09-15 17:10:46.557555+00:00"
+      }
+    },
+    {
+      "event_id": "c5f177d2-69a4-4720-b720-f44d030b851d",
+      "title": "US energy chief says Saudi Arabia oil pipeline should be back online within days [Attacks]",
+      "event_type": "conflict",
+      "confidence": 0.96,
+      "missing_fields": [],
+      "directly_involved_count": 2,
+      "directly_affected_count": 0,
+      "countries_count": 3,
+      "companies_count": 0,
+      "sectors_count": 2,
+      "geopolitical_count": 50,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 11:27:10+00:00",
+        "fetch_time": "2026-09-15 17:05:23.455946+00:00",
+        "ingestion_time": "2026-09-15 17:05:23.455946+00:00",
+        "extraction_time": "2026-09-15 17:05:23.929541+00:00",
+        "intelligence_update_time": "2026-09-15 17:05:23.929541+00:00"
+      }
+    },
+    {
+      "event_id": "7faa9ebf-6da2-44df-b2ff-af1f4e11cfc7",
+      "title": "Israeli \u2018influence campaign against Qatar\u2019 launched after October 7 attack",
+      "event_type": "conflict",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 0,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 11:20:46+00:00",
+        "fetch_time": "2026-09-15 17:07:18.961389+00:00",
+        "ingestion_time": "2026-09-15 17:07:18.961389+00:00",
+        "extraction_time": "2026-09-15 17:07:19.244976+00:00",
+        "intelligence_update_time": "2026-09-15 17:07:19.244976+00:00"
+      }
+    },
+    {
+      "event_id": "7a077d66-e71c-45cf-846c-79f73cb970ed",
+      "title": "Switzerland not being considered for new round of Ukraine talks \u2014 Russian foreign ministry [Sanctions]",
+      "event_type": "sanction",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 2,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 17,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 09:33:08+00:00",
+        "fetch_time": "2026-09-15 15:09:00.547314+00:00",
+        "ingestion_time": "2026-09-15 15:09:00.547314+00:00",
+        "extraction_time": "2026-09-15 15:09:00.742747+00:00",
+        "intelligence_update_time": "2026-09-15 15:09:00.742747+00:00"
+      }
+    },
+    {
+      "event_id": "ed7a6c47-faf0-4992-8a73-ff5ebaf556ba",
+      "title": "Ovechkin still backing Putin party in parliamentary vote [Parliamentary Election]",
+      "event_type": "election",
+      "confidence": 0.9,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 17,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 09:15:00+00:00",
+        "fetch_time": "2026-09-15 15:50:55.160203+00:00",
+        "ingestion_time": "2026-09-15 15:50:55.160203+00:00",
+        "extraction_time": "2026-09-15 15:50:55.326434+00:00",
+        "intelligence_update_time": "2026-09-15 15:50:55.326434+00:00"
+      }
+    },
+    {
+      "event_id": "39692895-940e-4722-b5d3-8af508abc592",
+      "title": "Ovechkin still backing Putin party in parliamentary vote [Parliamentary Election]",
+      "event_type": "election",
+      "confidence": 0.9,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 17,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 09:15:00+00:00",
+        "fetch_time": "2026-09-15 14:50:40.755226+00:00",
+        "ingestion_time": "2026-09-15 14:50:40.755226+00:00",
+        "extraction_time": "2026-09-15 14:50:40.997776+00:00",
+        "intelligence_update_time": "2026-09-15 14:50:40.997776+00:00"
+      }
+    },
+    {
+      "event_id": "fd13335b-eb30-4ba1-987f-8a5fb529d654",
+      "title": "Only 15% of Russia's trade done in dollars, euros \u2014 Kremlin official [Sanctions]",
+      "event_type": "sanction",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 2,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 2,
+      "geopolitical_count": 35,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 09:11:27+00:00",
+        "fetch_time": "2026-09-15 14:53:57.929168+00:00",
+        "ingestion_time": "2026-09-15 14:53:57.929168+00:00",
+        "extraction_time": "2026-09-15 14:53:58.179481+00:00",
+        "intelligence_update_time": "2026-09-15 14:53:58.179481+00:00"
+      }
+    },
+    {
+      "event_id": "9e922c6a-d53c-45ff-9fd8-cf8a20d0106c",
+      "title": "Alarmed Yemenis flee south as Houthis keep up attacks [Drone Strike]",
+      "event_type": "attack",
+      "confidence": 0.88,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 1,
+      "sectors_count": 0,
+      "geopolitical_count": 10,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 09:01:58+00:00",
+        "fetch_time": "2026-09-15 14:38:31.044302+00:00",
+        "ingestion_time": "2026-09-15 14:38:31.044302+00:00",
+        "extraction_time": "2026-09-15 14:38:31.259387+00:00",
+        "intelligence_update_time": "2026-09-15 14:38:31.259387+00:00"
+      }
+    },
+    {
+      "event_id": "d76af9d0-979b-4141-b07f-1bde76646bbd",
+      "title": "M4.8 Earthquake - 289 km WSW of Tual, Indonesia",
+      "event_type": "disaster",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 1,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 06:07:52.712000+00:00",
+        "fetch_time": "2026-09-15 06:29:14.393668+00:00",
+        "ingestion_time": "2026-09-15 06:29:14.393668+00:00",
+        "extraction_time": "2026-09-15 06:29:31.701220+00:00",
+        "intelligence_update_time": "2026-09-15 06:29:31.701220+00:00"
+      }
+    },
+    {
+      "event_id": "eaf71dae-1943-4d52-acac-5c59bcd4d14a",
+      "title": "Brazil's top court to decide on unprecedented probe of sitting justice [Presidential Election]",
+      "event_type": "election",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 2,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 05:37:21+00:00",
+        "fetch_time": "2026-09-15 12:23:08.150552+00:00",
+        "ingestion_time": "2026-09-15 12:23:08.150552+00:00",
+        "extraction_time": "2026-09-15 12:23:09.525794+00:00",
+        "intelligence_update_time": "2026-09-15 12:23:09.525794+00:00"
+      }
+    },
+    {
+      "event_id": "d0ee84cd-3fa3-43c5-aaa9-6f6b695ab4c8",
+      "title": "M4.8 Earthquake - 229 km E of Tadine, New Caledonia",
+      "event_type": "disaster",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 0,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 0,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 04:52:26.905000+00:00",
+        "fetch_time": "2026-09-15 06:29:14.393668+00:00",
+        "ingestion_time": "2026-09-15 06:29:14.393668+00:00",
+        "extraction_time": "2026-09-15 06:29:31.836474+00:00",
+        "intelligence_update_time": "2026-09-15 06:29:31.836474+00:00"
+      }
+    },
+    {
+      "event_id": "2b4c960b-ea0a-47f2-afaf-a678ea93f8b7",
+      "title": "\u2018Doing a North Korea\u2019? Why the Middle East could be entering a new nuclear age [To Acquire]",
+      "event_type": "corporate_action",
+      "confidence": 0.92,
+      "missing_fields": [],
+      "directly_involved_count": 2,
+      "directly_affected_count": 0,
+      "countries_count": 7,
+      "companies_count": 0,
+      "sectors_count": 1,
+      "geopolitical_count": 50,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "ANALYTICAL_IMPLICATION",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 04:30:14+00:00",
+        "fetch_time": "2026-09-15 12:23:16.700656+00:00",
+        "ingestion_time": "2026-09-15 12:23:16.700656+00:00",
+        "extraction_time": "2026-09-15 12:23:21.074643+00:00",
+        "intelligence_update_time": "2026-09-15 12:23:21.074643+00:00"
+      }
+    },
+    {
+      "event_id": "ae95a903-ba27-44f5-825f-075ab89e8f3b",
+      "title": "India scores Brics win with joint declaration despite divides",
+      "event_type": "international_agreement",
+      "confidence": 0.98,
+      "missing_fields": [],
+      "directly_involved_count": 1,
+      "directly_affected_count": 0,
+      "countries_count": 1,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 11,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED",
+        "DIRECT",
+        "HISTORICAL_ASSOCIATION"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 03:30:06+00:00",
+        "fetch_time": "2026-09-15 12:23:16.700656+00:00",
+        "ingestion_time": "2026-09-15 12:23:16.700656+00:00",
+        "extraction_time": "2026-09-15 12:23:21.911669+00:00",
+        "intelligence_update_time": "2026-09-15 12:23:21.911669+00:00"
+      }
+    },
+    {
+      "event_id": "652c668f-75bd-44f9-bd95-b21db1602fcb",
+      "title": "Massive missile attack on Taganrog, 222 downed drones: Ukrainian strikes' aftermath",
+      "event_type": "attack",
+      "confidence": 0.9,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 0,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 0,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 03:05:33+00:00",
+        "fetch_time": "2026-09-15 12:23:15.331978+00:00",
+        "ingestion_time": "2026-09-15 12:23:15.331978+00:00",
+        "extraction_time": "2026-09-15 12:23:21.555916+00:00",
+        "intelligence_update_time": "2026-09-15 12:23:21.555916+00:00"
+      }
+    },
+    {
+      "event_id": "16328fa7-2d33-4b77-809b-7e53090869ce",
+      "title": "Three fires break out after massive attack on Taganrog [Missile Attack]",
+      "event_type": "attack",
+      "confidence": 0.88,
+      "missing_fields": [],
+      "directly_involved_count": 0,
+      "directly_affected_count": 0,
+      "countries_count": 0,
+      "companies_count": 0,
+      "sectors_count": 0,
+      "geopolitical_count": 0,
+      "sources_count": 1,
+      "has_what_happened": true,
+      "has_why_it_matters": true,
+      "evidence_classes_present": [
+        "OBSERVED"
+      ],
+      "timestamps": {
+        "publication_time": "2026-09-15 00:25:00+00:00",
+        "fetch_time": "2026-09-15 06:29:13.593930+00:00",
+        "ingestion_time": "2026-09-15 06:29:13.593930+00:00",
+        "extraction_time": "2026-09-15 06:29:23.093203+00:00",
+        "intelligence_update_time": "2026-09-15 06:29:23.093203+00:00"
+      }
+    }
+  ]
+}
