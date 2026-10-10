@@ -30,11 +30,12 @@ async def lifespan(app: FastAPI):
         except Exception as exc:
             logger.error(f"Database connectivity check failed on startup: {exc}")
 
-        try:
-            scheduler.start()
-            logger.info("IngestionScheduler started on application boot.")
-        except Exception as sched_err:
-            logger.error(f"Failed to start IngestionScheduler on boot: {sched_err}")
+        if settings.ENABLE_SCHEDULER:
+            try:
+                scheduler.start()
+                logger.info("IngestionScheduler started on application boot.")
+            except Exception as sched_err:
+                logger.error(f"Failed to start IngestionScheduler on boot: {sched_err}")
 
     yield
 

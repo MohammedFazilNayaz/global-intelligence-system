@@ -1,0 +1,150 @@
+services:
+  # ========================================================
+  # 1. PostgreSQL Database Service
+  # ========================================================
+  postgres:
+    image: postgres:16-alpine
+    container_name: global_intelligence_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-global_intelligence}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-postgres}"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # PostgreSQL is NOT exposed to the host/public internet. Internal access only.
+    networks:
+      - app_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-global_intelligence}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  # ========================================================
+  # 2. FastAPI Backend & Ingestion Coordinator Service
+  # ========================================================
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: global_intelligence_backend
+    restart: unless-stopped
+    environment:
+      PROJECT_NAME: ${PROJECT_NAME:-Global Intelligence Platform}
+      ENVIRONMENT: ${ENVIRONMENT:-production}
+      DEBUG: ${DEBUG:-false}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      API_V1_STR: ${API_V1_STR:-/api/v1}
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-global_intelligence}
+      ENABLE_SCHEDULER: ${ENABLE_SCHEDULER:-true}
+      RUN_MIGRATIONS: ${RUN_MIGRATIONS:-true}
+      SEED_ON_STARTUP: ${SEED_ON_STARTUP:-false}
+      REQUEST_TIMEOUT_SECONDS: ${REQUEST_TIMEOUT_SECONDS:-15.0}
+      MAX_RETRIES: ${MAX_RETRIES:-3}
+      BACKOFF_FACTOR: ${BACKOFF_FACTOR:-1.5}
+      DEFAULT_USER_AGENT: ${DEFAULT_USER_AGENT:-GlobalIntelligencePlatform/1.0}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    # Internal port 8000 is NOT exposed publicly. Traffic is routed via Nginx reverse proxy.
+    networks:
+      - app_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://127.0.0.1:8000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    stop_grace_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  # ========================================================
+  # 3. Nginx Reverse Proxy & Frontend Web Dashboard
+  # ========================================================
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-/api/v1}
+    container_name: global_intelligence_frontend
+    restart: unless-stopped
+    ports:
+      # Only Nginx HTTP port is exposed to the host
+      - "${NGINX_PORT:-80}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - app_network
+    healthcheck:
+      test: ["CMD-SHELL", "wget --quiet --tries=1 --spider http://127.0.0.1/healthz || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    stop_grace_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  # ========================================================
+  # 4. Decoupled Ingestion Scheduler & Worker (Optional)
+  # By default, the backend service hosts the scheduler in-process
+  # as a single coordinator (uvicorn --workers 1) to prevent duplicate
+  # schedulers and retain real-time in-memory telemetry.
+  # To run in decoupled worker mode:
+  # 1. Set ENABLE_SCHEDULER=false on the backend service in .env
+  # 2. Start with: docker compose --profile worker up -d
+  # ========================================================
+  scheduler:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: global_intelligence_scheduler
+    restart: unless-stopped
+    command: ["python", "-m", "backend.app.worker"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-global_intelligence}
+      ENABLE_SCHEDULER: "true"
+      RUN_MIGRATIONS: "false"
+      ENVIRONMENT: ${ENVIRONMENT:-production}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      REQUEST_TIMEOUT_SECONDS: ${REQUEST_TIMEOUT_SECONDS:-15.0}
+      MAX_RETRIES: ${MAX_RETRIES:-3}
+      BACKOFF_FACTOR: ${BACKOFF_FACTOR:-1.5}
+      DEFAULT_USER_AGENT: ${DEFAULT_USER_AGENT:-GlobalIntelligencePlatform/1.0}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app_network
+    stop_grace_period: 30s
+    profiles: ["worker"]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local

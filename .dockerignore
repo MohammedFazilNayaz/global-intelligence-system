@@ -1,0 +1,60 @@
+# Version Control
+.git
+.gitignore
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.pem
+*.key
+*.cert
+
+# Python Virtual Environments & Cache
+.venv
+venv
+env
+ENV
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.mypy_cache
+.ruff_cache
+
+# Testing & Coverage Artifacts
+.pytest_cache
+.coverage
+.coverage.*
+htmlcov
+reports
+
+# Local Databases & Data Dirs
+*.db
+*.sqlite
+*.sqlite3
+global_intelligence.db
+.pgdata
+temp_pg
+
+# Frontend Node Modules & Local Build Outputs
+node_modules
+**/node_modules
+dist
+**/dist
+.eslintcache
+
+# Scratch Scripts & IDE
+scratch
+.idea
+.vscode
+*.swp
+*.swo
+
+# Windows Batch / Powershell Local Helper Scripts
+*.bat
+*.ps1
+
+# Documentation
+docs/

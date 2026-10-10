@@ -9,7 +9,8 @@ import type {
   SystemHealth,
 } from '../types/intelligence';
 
-const API_BASE = '/api/v1';
+const rawApiBase: string = (import.meta.env.VITE_API_URL as string) || '/api/v1';
+const API_BASE = rawApiBase.endsWith('/') ? rawApiBase.slice(0, -1) : rawApiBase;
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const url = `${API_BASE}${endpoint}`;
